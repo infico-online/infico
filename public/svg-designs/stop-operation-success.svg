@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Header -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back to Actions</text>
+
+    <!-- Success Icon -->
+    <g transform="translate(200,100)">
+        <circle cx="0" cy="0" r="40" fill="#ef5350" filter="url(#shadow)"/>
+        <path d="M-15,0 l10,10 l20,-20" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Title -->
+    <g transform="translate(200,170)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#ef5350" text-anchor="middle" font-weight="600">Operations Stopped</text>
+        <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">All operations have been suspended</text>
+    </g>
+
+    <!-- Status -->
+    <g transform="translate(20,220)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Status</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Operations:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#ef5350" text-anchor="end">STOPPED</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Transactions:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#ef5350" text-anchor="end">CANCELLED</text>
+
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">Users Notified:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">2,500</text>
+        </g>
+    </g>
+
+    <!-- Summary -->
+    <g transform="translate(20,350)">
+        <rect width="360" height="140" fill="#ffebee" stroke="#ef5350" stroke-width="1" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Actions completed:</text>
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">• All token transfers blocked</text>
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">• Buy/sell operations stopped</text>
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">• Pending transactions cancelled</text>
+            <text x="0" y="105" font-family="Courier" font-size="14" fill="#666666">• Platform users notified</text>
+        </g>
+    </g>
+
+    <!-- Admin Note -->
+    <g transform="translate(20,500)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Admin Note</text>
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Stopped by:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">@admin</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Time:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Oct 15, 12:30</text>
+            
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">Reason:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Security check</text>
+        </g>
+    </g>
+
+    <!-- Action Button -->
+    <g transform="translate(20,640)">
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">BACK TO ADMIN</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

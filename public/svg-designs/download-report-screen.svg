@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)"/>
+    
+    <!-- Header -->
+    <g transform="translate(200,60)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="600">Block Report</text>
+        <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">@johndoe • ID: #123456</text>
+    </g>
+
+    <!-- Report Content -->
+    <g transform="translate(20,100)">
+        <rect width="360" height="240" fill="url(#card-gradient)" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Report Details</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Block Date:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Oct 15, 2024</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Admin:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">@admin</text>
+            
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">ICO Status:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#ef5350" text-anchor="end">Stopped</text>
+            
+            <text x="0" y="105" font-family="Courier" font-size="14" fill="#666666">Investors Notified:</text>
+            <text x="320" y="105" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">152</text>
+            
+            <text x="0" y="130" font-family="Courier" font-size="14" fill="#666666">Total ICO Value:</text>
+            <text x="320" y="130" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">45,000 INFICO</text>
+
+            <text x="0" y="155" font-family="Courier" font-size="14" fill="#666666">Frozen Funds:</text>
+            <text x="320" y="155" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">45,000 USDT</text>
+
+            <text x="0" y="180" font-family="Courier" font-size="14" fill="#666666">Review Date:</text>
+            <text x="320" y="180" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Oct 16, 2024</text>
+        </g>
+    </g>
+
+    <!-- Extra Info -->
+    <g transform="translate(20,350)">
+        <rect width="360" height="120" fill="#ffebee" stroke="#ef5350" stroke-width="1" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Block Reason:</text>
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">• Terms of Service violation</text>
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">• Suspicious activity detected</text>
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">• Multiple user reports</text>
+        </g>
+    </g>
+
+    <!-- File Info -->
+    <g transform="translate(20,480)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">File Information</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Format:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">PDF</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Size:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">245 KB</text>
+            
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">Pages:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">3</text>
+        </g>
+    </g>
+
+    <!-- Download Button -->
+    <g transform="translate(20,620)">
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">DOWNLOAD PDF</text>
+    </g>
+
+    <!-- Back Button -->
+    <g transform="translate(20,676)">
+        <rect width="360" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">BACK</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

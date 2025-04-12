@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Header Section -->
+    <g transform="translate(20,16)">
+        <text x="0" y="24" font-family="Courier" font-size="24" fill="#1a1a1a">Token Operations</text>
+    </g>
+
+    <!-- Search Bar -->
+    <g transform="translate(20,56)">
+        <rect width="360" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="40" y="25" font-family="Courier" font-size="14" fill="#999999">🔍 Search requests...</text>
+    </g>
+
+    <!-- Operation Type Filter -->
+    <g transform="translate(20,112)">
+        <rect width="175" height="40" fill="#333333" rx="8"/>
+        <text x="87.5" y="25" font-family="Courier" font-size="14" fill="#ffffff" text-anchor="middle">BUY</text>
+
+        <rect x="185" width="175" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="272.5" y="25" font-family="Courier" font-size="14" fill="#333333" text-anchor="middle">WITHDRAW</text>
+    </g>
+
+    <!-- Sort and Stats -->
+    <g transform="translate(20,168)">
+        <!-- Sort -->
+        <rect width="175" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="25" font-family="Courier" font-size="14" fill="#666666">Sort by: Date ▼</text>
+
+        <!-- Unified Stats -->
+        <rect x="185" width="175" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="200" y="25" font-family="Courier" font-size="14" fill="#666666">2 • 3,500 USDT</text>
+    </g>
+
+    <!-- Request Cards -->
+    <g transform="translate(20,224)">
+        <!-- Request Card 1 -->
+        <rect width="360" height="240" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <!-- Header with user and status -->
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">@johndoe</text>
+            <rect x="240" y="-15" width="100" height="24" fill="#4caf50" rx="12"/>
+            <text x="290" y="-1" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">NEW</text>
+            
+            <!-- Balance Info -->
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Current balance: 2,500 INFICO</text>
+            
+            <!-- Transaction Info -->
+            <text x="0" y="45" font-family="Courier" font-size="14" fill="#666666">1,000 USDT • Oct 15, 12:30 PM</text>
+            
+            <!-- Wallet Address -->
+            <text x="0" y="70" font-family="Courier" font-size="14" fill="#666666">USDT Address (TRC20):</text>
+            <rect y="80" width="320" height="36" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="102" font-family="Courier" font-size="14" fill="#333333">TWu7KjX9pSEQy8p2YxWNvR5Lk8YztyQFGHtz9K</text>
+            
+            <!-- INFICO Amount -->
+            <text x="0" y="140" font-family="Courier" font-size="14" fill="#4caf50">INFICO to send: 990 (1% fee)</text>
+
+            <!-- Action Buttons -->
+            <g transform="translate(0,160)">
+                <rect width="155" height="40" fill="#333333" rx="6"/>
+                <text x="77.5" y="25" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">SEND 990 INFICO</text>
+                
+                <rect x="165" width="155" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="6"/>
+                <text x="242.5" y="25" font-family="Courier" font-size="12" fill="#333333" text-anchor="middle">SEND MESSAGE</text>
+            </g>
+        </g>
+
+        <!-- Request Card 2 -->
+        <g transform="translate(0,256)">
+            <rect width="360" height="240" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <g transform="translate(20,20)">
+                <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">@cryptomaster</text>
+                <rect x="240" y="-15" width="100" height="24" fill="#ff9800" rx="12"/>
+                <text x="290" y="-1" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">PENDING</text>
+                
+                <!-- Balance Info -->
+                <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Current balance: 5,000 INFICO</text>
+                
+                <!-- Transaction Info -->
+                <text x="0" y="45" font-family="Courier" font-size="14" fill="#666666">2,500 USDT • Oct 15, 12:15 PM</text>
+                
+                <!-- Wallet Address -->
+                <text x="0" y="70" font-family="Courier" font-size="14" fill="#666666">USDT Address (TRC20):</text>
+                <rect y="80" width="320" height="36" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+                <text x="10" y="102" font-family="Courier" font-size="14" fill="#333333">TKx8HJk7LmN2pQvR5WyEtYz9KNm2P</text>
+                
+                <!-- INFICO Amount -->
+                <text x="0" y="140" font-family="Courier" font-size="14" fill="#4caf50">INFICO to send: 2,475 (1% fee)</text>
+
+                <!-- Action Buttons -->
+                <g transform="translate(0,160)">
+                    <rect width="155" height="40" fill="#333333" rx="6"/>
+                    <text x="77.5" y="25" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">SEND 2,475 INFICO</text>
+                    
+                    <rect x="165" width="155" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="6"/>
+                    <text x="242.5" y="25" font-family="Courier" font-size="12" fill="#333333" text-anchor="middle">SEND MESSAGE</text>
+                </g>
+            </g>
+        </g>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>

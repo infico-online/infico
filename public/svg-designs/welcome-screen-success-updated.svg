@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Success Icon -->
+    <g transform="translate(200,200)">
+        <circle cx="0" cy="0" r="40" fill="#333333" filter="url(#shadow)"/>
+        <path d="M-15,0 l10,10 l20,-20" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Success Message -->
+    <g transform="translate(200,280)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a" text-anchor="middle">Changes Saved!</text>
+        <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">Welcome screen has been updated</text>
+    </g>
+
+    <!-- Status Info -->
+    <g transform="translate(20,340)">
+        <rect width="360" height="140" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Update Details</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Image:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">Updated</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Link:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">Set</text>
+            
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">Button Text:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">Added</text>
+
+            <text x="0" y="105" font-family="Courier" font-size="14" fill="#666666">Language:</text>
+            <text x="320" y="105" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">English</text>
+        </g>
+    </g>
+
+    <!-- Action Button -->
+    <g transform="translate(20,500)">
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">BACK TO ADMIN</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>

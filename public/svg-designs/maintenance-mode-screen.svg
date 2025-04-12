@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Top Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back to Actions</text>
+
+    <!-- Header -->
+    <g transform="translate(20,65)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a">Maintenance Mode</text>
+    </g>
+
+    <!-- Current Status -->
+    <g transform="translate(20,95)">
+        <rect width="360" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Current Status</text>
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#4caf50">Platform is Online</text>
+        </g>
+    </g>
+
+    <!-- Message Settings -->
+    <g transform="translate(20,185)">
+        <rect width="360" height="140" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Custom Message</text>
+            
+            <!-- Message Input -->
+            <rect y="20" width="320" height="60" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="15" y="45" font-family="Courier" font-size="14" fill="#999999">Enter maintenance message...</text>
+        </g>
+    </g>
+
+    <!-- Duration Settings -->
+    <g transform="translate(20,335)">
+        <rect width="360" height="140" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Duration</text>
+            
+            <rect x="0" y="20" width="155" height="40" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="15" y="45" font-family="Courier" font-size="14" fill="#999999">Start time</text>
+            
+            <rect x="165" y="20" width="155" height="40" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="180" y="45" font-family="Courier" font-size="14" fill="#999999">End time</text>
+
+            <!-- Checkbox -->
+            <rect x="0" y="70" width="20" height="20" fill="#ffffff" stroke="#333333" stroke-width="1" rx="4"/>
+            <text x="30" y="85" font-family="Courier" font-size="14" fill="#333333">Indefinite maintenance</text>
+        </g>
+    </g>
+
+    <!-- Access Settings -->
+    <g transform="translate(20,485)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Access Settings</text>
+            
+            <!-- Admin Access -->
+            <rect x="0" y="20" width="20" height="20" fill="#ffffff" stroke="#333333" stroke-width="1" rx="4"/>
+            <text x="30" y="35" font-family="Courier" font-size="14" fill="#333333">Allow admin access</text>
+            
+            <!-- Support Access -->
+            <rect x="0" y="50" width="20" height="20" fill="#ffffff" stroke="#333333" stroke-width="1" rx="4"/>
+            <text x="30" y="65" font-family="Courier" font-size="14" fill="#333333">Allow support team access</text>
+        </g>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(20,615)">
+        <!-- Enable Button -->
+        <rect width="360" height="48" fill="#ef5350" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">ENABLE MAINTENANCE MODE</text>
+
+        <!-- Cancel Button -->
+        <rect y="56" width="360" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="180" y="86" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">CANCEL</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>

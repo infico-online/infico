@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="#ffffff" rx="40"/>
+    
+    <!-- Top Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back</text>
+    <text x="320" y="35" font-family="Courier" font-size="16" fill="#333333">Home</text>
+
+    <!-- Header with Period Selector -->
+    <g transform="translate(20,65)">
+        <text x="0" y="24" font-family="Courier" font-size="24" fill="#1a1a1a">ICO Performance</text>
+        
+        <!-- Period Selector -->
+        <rect x="240" y="-10" width="120" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="300" y="15" font-family="Courier" font-size="14" fill="#333333" text-anchor="middle">30 Days ▼</text>
+    </g>
+
+    <!-- Key Metrics Row -->
+    <g transform="translate(20,105)">
+        <!-- Active ICO -->
+        <rect width="175" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Active ICO</text>
+            <text x="0" y="25" font-family="Courier" font-size="24" fill="#333333">25</text>
+            <text x="0" y="50" font-family="Courier" font-size="14" fill="#4caf50">+15.5%</text>
+        </g>
+
+        <!-- Total Investment -->
+        <g transform="translate(185,0)">
+            <rect width="175" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <g transform="translate(20,20)">
+                <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Total Investment</text>
+                <text x="0" y="25" font-family="Courier" font-size="24" fill="#333333">125K</text>
+                <text x="0" y="50" font-family="Courier" font-size="14" fill="#4caf50">+23.2%</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Success Rate Stats -->
+    <g transform="translate(20,205)">
+        <rect width="360" height="180" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Success Rate</text>
+            
+            <!-- Stats -->
+            <g transform="translate(0,30)">
+                <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Target Reached:</text>
+                <text x="320" y="0" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">18 ICOs</text>
+                
+                <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">In Progress:</text>
+                <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">25 ICOs</text>
+                
+                <text x="0" y="60" font-family="Courier" font-size="14" fill="#666666">Completion Rate:</text>
+                <text x="320" y="60" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">87.5%</text>
+                
+                <text x="0" y="90" font-family="Courier" font-size="14" fill="#666666">Avg Raise Time:</text>
+                <text x="320" y="90" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">45 days</text>
+
+                <text x="0" y="120" font-family="Courier" font-size="14" fill="#666666">Avg Goal Amount:</text>
+                <text x="320" y="120" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">100,000 INFICO</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Investment Distribution -->
+    <g transform="translate(20,395)">
+        <rect width="360" height="180" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Investment Distribution</text>
+            
+            <!-- Stats -->
+            <g transform="translate(0,30)">
+                <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Small (0-1K):</text>
+                <text x="320" y="0" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">35% (875)</text>
+                
+                <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Medium (1K-5K):</text>
+                <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">45% (1,125)</text>
+                
+                <text x="0" y="60" font-family="Courier" font-size="14" fill="#666666">Large (5K-10K):</text>
+                <text x="320" y="60" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">15% (375)</text>
+                
+                <text x="0" y="90" font-family="Courier" font-size="14" fill="#666666">Whale (10K+):</text>
+                <text x="320" y="90" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">5% (125)</text>
+
+                <text x="0" y="120" font-family="Courier" font-size="14" fill="#666666">Unique Investors:</text>
+                <text x="320" y="120" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">2,500</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Growth Metrics -->
+    <g transform="translate(20,585)">
+        <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Growth Metrics</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">New ICOs Started: +8 this month</text>
+            <text x="0" y="45" font-family="Courier" font-size="14" fill="#666666">ICOs Completed: +5 this month</text>
+        </g>
+    </g>
+
+    <!-- Download Report Button -->
+    <g transform="translate(20,685)">
+        <rect width="360" height="45" fill="#333333" rx="8"/>
+        <text x="180" y="28" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">DOWNLOAD PDF REPORT</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>

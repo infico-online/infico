@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back</text>
+    <text x="320" y="35" font-family="Courier" font-size="16" fill="#333333">Home</text>
+
+    <!-- Channel Header -->
+    <g transform="translate(20,55)">
+        <!-- Channel Name -->
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a">@crypto_signals</text>
+        <rect x="260" y="-15" width="80" height="20" fill="#333333" rx="10"/>
+        <text x="300" y="-1" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">PREMIUM</text>
+    </g>
+
+    <!-- Channel Stats Card -->
+    <g transform="translate(20,75)">
+        <rect width="360" height="80" fill="url(#card-gradient)" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Category:</text>
+            <text x="100" y="0" font-family="Courier" font-size="14" fill="#333333">Crypto • English</text>
+            
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Subscribers:</text>
+            <text x="100" y="25" font-family="Courier" font-size="14" fill="#333333">50K</text>
+            
+            <text x="0" y="50" font-family="Courier" font-size="14" fill="#666666">Growth:</text>
+            <text x="100" y="50" font-family="Courier" font-size="14" fill="#4caf50">+25% this month</text>
+        </g>
+    </g>
+
+    <!-- Channel Description -->
+    <g transform="translate(20,165)">
+        <rect width="360" height="100" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">About Channel</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Daily crypto market analysis and</text>
+            <text x="0" y="45" font-family="Courier" font-size="14" fill="#666666">trading signals. Expert insights</text>
+            <text x="0" y="65" font-family="Courier" font-size="14" fill="#666666">and portfolio management tips.</text>
+        </g>
+    </g>
+
+    <!-- Subscription Options -->
+    <g transform="translate(20,275)">
+        <rect width="360" height="120" fill="#333333" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#ffffff">Subscription</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#ffffff">Price: 95.5 INFICO / month</text>
+            
+            <text x="0" y="50" font-family="Courier" font-size="14" fill="#ffffff">What you get:</text>
+            <text x="20" y="75" font-family="Courier" font-size="14" fill="#ffffff">• Daily market analysis</text>
+            <text x="20" y="95" font-family="Courier" font-size="14" fill="#ffffff">• Trading signals</text>
+        </g>
+    </g>
+
+    <!-- Preview Content -->
+    <g transform="translate(20,415)">
+        <!-- Title -->
+        <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Recent Posts</text>
+        
+        <!-- Post 1 -->
+        <g transform="translate(0,15)">
+            <rect width="360" height="50" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="20" y="22" font-family="Courier" font-size="14" fill="#333333">Daily Market Update</text>
+            <text x="20" y="40" font-family="Courier" font-size="14" fill="#666666">BTC analysis and key levels...</text>
+            <text x="320" y="22" font-family="Courier" font-size="12" fill="#666666" text-anchor="end">2h ago</text>
+        </g>
+        
+        <!-- Post 2 -->
+        <g transform="translate(0,75)">
+            <rect width="360" height="50" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="20" y="22" font-family="Courier" font-size="14" fill="#333333">Trading Signal</text>
+            <text x="20" y="40" font-family="Courier" font-size="14" fill="#666666">ETH/USDT long opportunity...</text>
+            <text x="320" y="22" font-family="Courier" font-size="12" fill="#666666" text-anchor="end">5h ago</text>
+        </g>
+    </g>
+
+    <!-- INFICO Balance -->
+    <g transform="translate(20,545)">
+        <rect width="360" height="50" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="30" font-family="Courier" font-size="14" fill="#666666">Your INFICO Balance:</text>
+        <text x="340" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">1,500</text>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(20,605)">
+        <!-- Subscribe Button -->
+        <rect width="360" height="45" fill="#333333" rx="8"/>
+        <text x="180" y="28" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">SUBSCRIBE • 95.5 INFICO</text>
+
+        <!-- Secondary Actions -->
+        <g transform="translate(0,55)">
+            <rect width="175" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+            <text x="87.5" y="25" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">BUY TOKENS</text>
+
+            <rect x="185" width="175" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+            <text x="272.5" y="25" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">ADD TO FAVORITES</text>
+        </g>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">More</text>
+    </g>
+</svg>

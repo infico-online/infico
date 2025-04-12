@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+    
+    <!-- Основной фон -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Back/Home навигация -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back</text>
+    <text x="320" y="35" font-family="Courier" font-size="16" fill="#333333">Home</text>
+
+    <!-- Иконка успеха -->
+    <g transform="translate(200,110)">
+        <circle cx="0" cy="0" r="40" fill="#333333" filter="url(#shadow)"/>
+        <path d="M-20,-5 l10,10 l30,-30" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Заголовок и описание -->
+    <g transform="translate(200,180)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="600">Added to Favorites</text>
+        <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">Now you can track updates from this profile</text>
+    </g>
+
+    <!-- Карточка профиля -->
+    <g transform="translate(20,225)">
+        <rect width="360" height="140" fill="url(#card-gradient)" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        
+        <g transform="translate(20,20)">
+            <!-- Аватар и имя -->
+            <rect width="60" height="60" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+            <text x="30" y="38" font-family="Courier" font-size="24" fill="#333333" text-anchor="middle">JD</text>
+
+            <!-- Информация -->
+            <g transform="translate(80,5)">
+                <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">John Doe</text>
+                <text x="150" y="0" font-family="Courier" font-size="12" fill="#333333" text-anchor="end">VERIFIED</text>
+                
+                <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Technology • English</text>
+                
+                <text x="0" y="50" font-family="Courier" font-size="14" fill="#666666">2.5K Views • 150 Likes</text>
+            </g>
+
+            <!-- Дополнительная информация -->
+            <text x="0" y="100" font-family="Courier" font-size="14" fill="#666666">Tech enthusiast and content creator</text>
+        </g>
+    </g>
+
+    <!-- Уведомления -->
+    <g transform="translate(20,385)">
+        <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Notifications</text>
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">• New content updates</text>
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">• ICO status changes</text>
+        </g>
+    </g>
+
+    <!-- Кнопки действий -->
+    <g transform="translate(20,495)">
+        <!-- View Profile -->
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">VIEW PROFILE</text>
+
+        <!-- View All Favorites -->
+        <rect y="58" width="360" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="180" y="88" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">VIEW ALL FAVORITES</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">More</text>
+    </g>
+</svg>

@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)"/>
+    
+    <!-- Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back to Users</text>
+    
+    <!-- User Profile Section -->
+    <g transform="translate(20,55)">
+        <!-- Profile Header -->
+        <rect width="360" height="150" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        
+        <!-- Photo -->
+        <g transform="translate(20,20)">
+            <rect width="50" height="50" fill="#f8f8f8" rx="8"/>
+            <text x="25" y="33" font-family="Courier" font-size="24" fill="#333333" text-anchor="middle">JD</text>
+            <rect x="35" y="0" width="24" height="24" fill="#333333" rx="6"/>
+            <text x="47" y="16" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">✎</text>
+        </g>
+
+        <!-- Badges -->
+        <g transform="translate(20,80)">
+            <rect width="80" height="20" fill="#2196f3" rx="10"/>
+            <text x="40" y="14" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">ACTIVE ICO</text>
+            
+            <rect y="25" width="80" height="20" fill="#4caf50" rx="10"/>
+            <text x="40" y="39" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">VERIFIED</text>
+            
+            <rect y="50" width="80" height="20" fill="#333333" rx="10"/>
+            <text x="40" y="64" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">PREMIUM</text>
+        </g>
+
+        <!-- Editable Fields -->
+        <g transform="translate(120,20)">
+            <!-- Username -->
+            <rect width="220" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="17" font-family="Courier" font-size="14" fill="#333333">@johndoe</text>
+
+            <!-- Age -->
+            <rect y="30" width="105" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="47" font-family="Courier" font-size="14" fill="#666666">25</text>
+
+            <!-- Gender -->
+            <rect x="115" y="30" width="105" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="125" y="47" font-family="Courier" font-size="14" fill="#666666">Male</text>
+
+            <!-- Country Dropdown -->
+            <rect y="60" width="105" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="77" font-family="Courier" font-size="14" fill="#666666">USA ▼</text>
+
+            <!-- City Dropdown -->
+            <rect x="115" y="60" width="105" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="125" y="77" font-family="Courier" font-size="14" fill="#666666">New York ▼</text>
+
+            <!-- Category Dropdown -->
+            <rect y="90" width="105" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="107" font-family="Courier" font-size="14" fill="#666666">Tech ▼</text>
+
+            <!-- Language Dropdown -->
+            <rect x="115" y="90" width="105" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="125" y="107" font-family="Courier" font-size="14" fill="#666666">English ▼</text>
+        </g>
+    </g>
+
+    <!-- Token Info -->
+    <g transform="translate(20,215)">
+        <!-- INFICO -->
+        <rect width="175" height="50" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="30" font-family="Courier" font-size="14" fill="#333333">INFICO</text>
+        <rect x="20" y="15" width="135" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+        <text x="30" y="32" font-family="Courier" font-size="14" fill="#666666">80,000 ICO</text>
+
+        <!-- ICO Limit -->
+        <rect x="185" width="175" height="50" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="205" y="30" font-family="Courier" font-size="14" fill="#333333">ICO</text>
+        <rect x="205" y="15" width="135" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+        <text x="215" y="32" font-family="Courier" font-size="14" fill="#666666">40,000 INF</text>
+    </g>
+
+    <!-- Wallet Addresses с обновленными цветами -->
+    <g transform="translate(20,275)">
+        <!-- TON (синий) -->
+        <rect width="175" height="50" fill="#2196f3" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="30" font-family="Courier" font-size="14" fill="#ffffff">TON</text>
+        <rect x="20" y="15" width="135" height="24" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+        <text x="30" y="32" font-family="Courier" font-size="14" fill="#666666">UQwer4...Tz7Y9</text>
+
+        <!-- USDT (зеленый) -->
+        <rect x="185" width="175" height="50" fill="#4caf50" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="205" y="30" font-family="Courier" font-size="14" fill="#ffffff">USDT</text>
+        <rect x="205" y="15" width="135" height="24" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+        <text x="215" y="32" font-family="Courier" font-size="14" fill="#666666">TQwer4...Tz7Y9</text>
+    </g>
+
+    <!-- Active ICO -->
+    <g transform="translate(20,335)">
+        <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Active ICO</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">100K INFICO • 6m • 15% APY</text>
+            <text x="0" y="45" font-family="Courier" font-size="14" fill="#666666">Progress: 45%</text>
+            
+            <!-- Progress Bar -->
+            <rect y="55" width="320" height="6" fill="#f0f0f0" rx="3"/>
+            <rect y="55" width="144" height="6" fill="#333333" rx="3"/>
+            
+            <rect x="266" y="-15" width="74" height="30" fill="#333333" rx="6"/>
+            <text x="303" y="3" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">EDIT ICO</text>
+        </g>
+    </g>
+
+    <!-- Social Links -->
+    <g transform="translate(20,435)">
+        <rect width="360" height="240" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+
+        <!-- YouTube -->
+        <g transform="translate(20,20)">
+            <!-- Button Name -->
+            <rect width="280" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="17" font-family="Courier" font-size="14" fill="#666666">YouTube Channel</text>
+            
+            <!-- Link -->
+            <rect y="30" width="280" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="47" font-family="Courier" font-size="14" fill="#666666">youtube.com/user</text>
+
+            <!-- Delete Button -->
+            <rect x="290" y="0" width="50" height="54" fill="#ef5350" rx="6"/>
+            <text x="315" y="32" font-family="Courier" font-size="20" fill="#ffffff" text-anchor="middle">🗑</text>
+        </g>
+
+        <!-- Twitter -->
+        <g transform="translate(20,84)">
+            <!-- Button Name -->
+            <rect width="280" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="17" font-family="Courier" font-size="14" fill="#666666">Twitter Profile</text>
+            
+            <!-- Link -->
+            <rect y="30" width="280" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="47" font-family="Courier" font-size="14" fill="#666666">twitter.com/user</text>
+
+            <!-- Delete Button -->
+            <rect x="290" y="0" width="50" height="54" fill="#ef5350" rx="6"/>
+            <text x="315" y="32" font-family="Courier" font-size="20" fill="#ffffff" text-anchor="middle">🗑</text>
+        </g>
+
+        <!-- Instagram -->
+        <g transform="translate(20,148)">
+            <!-- Button Name -->
+            <rect width="280" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="17" font-family="Courier" font-size="14" fill="#666666">Instagram Profile</text>
+            
+            <!-- Link -->
+            <rect y="30" width="280" height="24" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="10" y="47" font-family="Courier" font-size="14" fill="#666666">instagram.com/user</text>
+
+            <!-- Delete Button -->
+            <rect x="290" y="0" width="50" height="54" fill="#ef5350" rx="6"/>
+            <text x="315" y="32" font-family="Courier" font-size="20" fill="#ffffff" text-anchor="middle">🗑</text>
+        </g>
+    </g>
+
+    <!-- Admin Actions -->
+    <g transform="translate(20,685)">
+        <rect width="85" height="36" fill="#333333" rx="8"/>
+        <text x="42.5" y="24" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">MESSAGE</text>
+
+        <rect x="95" width="85" height="36" fill="#4caf50" rx="8"/>
+        <text x="137.5" y="24" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">ACTIVITY</text>
+
+        <rect x="190" width="85" height="36" fill="#333333" rx="8"/>
+        <text x="232.5" y="24" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">SAVE</text>
+
+        <rect x="285" width="85" height="36" fill="#ef5350" rx="8"/>
+        <text x="327.5" y="24" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">BLOCK</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

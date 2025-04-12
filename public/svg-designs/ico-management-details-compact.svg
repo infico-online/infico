@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Top Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back to ICO List</text>
+
+    <!-- Channel Info Header (Compact) -->
+    <g transform="translate(20,65)">
+        <rect width="360" height="70" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        
+        <!-- Channel Name and Status -->
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="18" fill="#333333">@cryptonews</text>
+            <rect x="240" y="-15" width="80" height="24" fill="#4caf50" rx="12"/>
+            <text x="280" y="-1" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">ACTIVE</text>
+            
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">ID: #123456 • Started: Sep 15, 2024</text>
+        </g>
+    </g>
+
+    <!-- ICO Parameters (Compact) -->
+    <g transform="translate(20,145)">
+        <rect width="360" height="130" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="30" font-family="Courier" font-size="16" fill="#333333">ICO Parameters</text>
+        
+        <g transform="translate(20,45)">
+            <!-- Two-column layout -->
+            <g>
+                <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Total ICO:</text>
+                <text x="140" y="0" font-family="Courier" font-size="14" fill="#333333">100,000 INFICO</text>
+                
+                <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Term • APY:</text>
+                <text x="140" y="25" font-family="Courier" font-size="14" fill="#333333">6m • 15%</text>
+                
+                <text x="0" y="50" font-family="Courier" font-size="14" fill="#666666">Start:</text>
+                <text x="140" y="50" font-family="Courier" font-size="14" fill="#333333">Sep 15, 2024</text>
+                
+                <text x="0" y="75" font-family="Courier" font-size="14" fill="#666666">End:</text>
+                <text x="140" y="75" font-family="Courier" font-size="14" fill="#333333">Mar 15, 2025</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Progress Stats (Compact) -->
+    <g transform="translate(20,285)">
+        <rect width="360" height="100" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="30" font-family="Courier" font-size="16" fill="#333333">Current Progress</text>
+        
+        <g transform="translate(20,45)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">45,000/100,000 INFICO • 152 investors</text>
+            
+            <!-- Progress Bar -->
+            <rect y="15" width="320" height="6" fill="#f0f0f0" rx="3"/>
+            <rect y="15" width="144" height="6" fill="#333333" rx="3"/>
+        </g>
+    </g>
+
+    <!-- Payment Schedule (Compact) -->
+    <g transform="translate(20,395)">
+        <rect width="360" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="30" font-family="Courier" font-size="16" fill="#333333">Next Payment</text>
+        
+        <g transform="translate(20,50)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">6,750 INFICO • Due: Oct 15, 2024</text>
+        </g>
+    </g>
+
+    <!-- Action Buttons (2x2 Grid) -->
+    <g transform="translate(20,485)">
+        <!-- First Row -->
+        <rect width="175" height="48" fill="#333333" rx="8"/>
+        <text x="87.5" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">EDIT PARAMETERS</text>
+
+        <rect x="185" width="175" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="272.5" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">VIEW INVESTORS</text>
+
+        <!-- Second Row -->
+        <g transform="translate(0,56)">
+            <rect width="175" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+            <text x="87.5" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">EXPORT DATA</text>
+
+            <rect x="185" width="175" height="48" fill="#ef5350" rx="8"/>
+            <text x="272.5" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">STOP ICO</text>
+        </g>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

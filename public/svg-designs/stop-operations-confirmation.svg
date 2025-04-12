@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Header -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back to Actions</text>
+
+    <!-- Warning Icon -->
+    <g transform="translate(200,100)">
+        <circle cx="0" cy="0" r="40" fill="#ef5350" filter="url(#shadow)"/>
+        <text x="0" y="15" font-family="Courier" font-size="40" fill="#ffffff" text-anchor="middle">!</text>
+    </g>
+
+    <!-- Title -->
+    <g transform="translate(200,170)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#ef5350" text-anchor="middle" font-weight="600">Stop All Operations?</text>
+        <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">This action cannot be undone</text>
+    </g>
+
+    <!-- Current Status -->
+    <g transform="translate(20,220)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Current Activity</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Active Operations:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">124</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">24h Volume:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">150,000 INFICO</text>
+
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">Active Users:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">2,500</text>
+        </g>
+    </g>
+
+    <!-- Impact Warning -->
+    <g transform="translate(20,350)">
+        <rect width="360" height="140" fill="#ffebee" stroke="#ef5350" stroke-width="1" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">This will:</text>
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">• Stop all token transfers</text>
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">• Block all buy/sell operations</text>
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">• Cancel all pending transactions</text>
+            <text x="0" y="105" font-family="Courier" font-size="14" fill="#666666">• Notify all platform users</text>
+        </g>
+    </g>
+
+    <!-- Confirmation Input -->
+    <g transform="translate(20,500)">
+        <rect width="360" height="100" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#333333">Type "STOP" to confirm:</text>
+            <rect y="15" width="320" height="45" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+            <text x="15" y="43" font-family="Courier" font-size="16" fill="#999999">Enter confirmation...</text>
+        </g>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(20,620)">
+        <!-- Stop Button -->
+        <rect width="360" height="48" fill="#ef5350" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">STOP ALL OPERATIONS</text>
+
+        <!-- Cancel Button -->
+        <g transform="translate(0,56)">
+            <rect width="360" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+            <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">CANCEL</text>
+        </g>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

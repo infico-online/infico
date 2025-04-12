@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Top Navigation and User Info -->
+    <g transform="translate(0,0)">
+        <rect width="400" height="120" fill="#ffffff" filter="url(#shadow)"/>
+        
+        <!-- Back Button -->
+        <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back</text>
+        
+        <!-- User Info -->
+        <g transform="translate(20,50)">
+            <!-- User Avatar -->
+            <rect x="0" y="0" width="50" height="50" fill="#f8f8f8" rx="25"/>
+            <text x="25" y="30" font-family="Courier" font-size="20" fill="#333333" text-anchor="middle">JD</text>
+            
+            <!-- User Details -->
+            <text x="70" y="20" font-family="Courier" font-size="16" fill="#333333">@johndoe</text>
+            <text x="70" y="40" font-family="Courier" font-size="14" fill="#666666">ID: #123456</text>
+            
+            <!-- Verification Badge -->
+            <rect x="280" y="5" width="80" height="24" fill="#ff9800" rx="12"/>
+            <text x="320" y="21" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">PENDING</text>
+        </g>
+    </g>
+
+    <!-- Chat Messages Area -->
+    <g transform="translate(20,140)">
+        <!-- Date Separator -->
+        <rect x="100" y="0" width="160" height="24" fill="#f0f0f0" rx="12"/>
+        <text x="200" y="16" font-family="Courier" font-size="12" fill="#666666" text-anchor="middle">October 15, 2024</text>
+        
+        <!-- Admin Message -->
+        <g transform="translate(40,40)">
+            <rect width="280" height="70" fill="#333333" rx="8"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#ffffff">Please provide admin access to</text>
+            <text x="20" y="45" font-family="Courier" font-size="14" fill="#ffffff">@inficoBot for your Telegram</text>
+            <text x="20" y="65" font-family="Courier" font-size="12" fill="#ffffff">12:30 PM</text>
+        </g>
+
+        <!-- User Message -->
+        <g transform="translate(80,130)">
+            <rect width="280" height="70" fill="#f8f8f8" rx="8"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#333333">I've added the bot as admin.</text>
+            <text x="20" y="45" font-family="Courier" font-size="14" fill="#333333">Please check and verify.</text>
+            <text x="260" y="65" font-family="Courier" font-size="12" fill="#666666" text-anchor="end">12:35 PM</text>
+        </g>
+
+        <!-- Admin Message -->
+        <g transform="translate(40,220)">
+            <rect width="280" height="90" fill="#333333" rx="8"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#ffffff">Thanks! I'll check and process</text>
+            <text x="20" y="45" font-family="Courier" font-size="14" fill="#ffffff">your verification request.</text>
+            <text x="20" y="65" font-family="Courier" font-size="14" fill="#ffffff">Please wait for confirmation.</text>
+            <text x="20" y="85" font-family="Courier" font-size="12" fill="#ffffff">12:36 PM</text>
+        </g>
+    </g>
+
+    <!-- Quick Reply Templates -->
+    <g transform="translate(20,520)">
+        <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Quick Replies</text>
+        <g transform="translate(0,15)">
+            <rect width="175" height="36" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+            <text x="87.5" y="23" font-family="Courier" font-size="12" text-anchor="middle" fill="#333333">CHECK BOT ACCESS</text>
+
+            <rect x="185" width="175" height="36" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+            <text x="272.5" y="23" font-family="Courier" font-size="12" text-anchor="middle" fill="#333333">VERIFY CHANNEL</text>
+        </g>
+    </g>
+
+    <!-- Message Input Area -->
+    <g transform="translate(0,580)">
+        <rect width="400" height="140" fill="#ffffff" filter="url(#shadow)"/>
+        
+        <!-- Text Input -->
+        <g transform="translate(20,20)">
+            <rect width="360" height="60" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+            <text x="20" y="35" font-family="Courier" font-size="14" fill="#999999">Type a message...</text>
+        </g>
+        
+        <!-- Send Button -->
+        <g transform="translate(20,90)">
+            <rect width="360" height="40" fill="#333333" rx="8"/>
+            <text x="180" y="25" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">SEND</text>
+        </g>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>

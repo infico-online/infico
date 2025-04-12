@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <!-- Текстура бумаги -->
+        <pattern id="paper-texture" width="10" height="10" patternUnits="userSpaceOnUse">
+            <rect width="10" height="10" fill="#f0f0f0"/>
+            <path d="M0 0 L10 10 M10 0 L0 10" stroke="#e0e0e0" stroke-width="0.5" opacity="0.3"/>
+        </pattern>
+
+        <!-- Деревянная текстура для фона -->
+        <pattern id="wood-texture" width="50" height="50" patternUnits="userSpaceOnUse">
+            <rect width="50" height="50" fill="#D2B48C"/>
+            <path d="M0 0 L50 50 M50 0 L0 50" stroke="#8B4513" stroke-width="1" opacity="0.1"/>
+        </pattern>
+
+        <!-- Металлический градиент для кнопок -->
+        <linearGradient id="metal-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#E0E0E0;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#A0A0A0;stop-opacity:1"/>
+        </linearGradient>
+
+        <!-- Реалистичная тень -->
+        <filter id="realistic-shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="2" dy="2" result="offsetblur"/>
+            <feFlood flood-color="#000000" flood-opacity="0.4"/>
+            <feComposite in2="offsetblur" operator="in"/>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Фон с текстурой дерева -->
+    <rect width="400" height="800" fill="url(#wood-texture)"/>
+
+    <!-- Контейнер с текстурой бумаги -->
+    <rect x="10" y="10" width="380" height="780" fill="url(#paper-texture)" rx="20" filter="url(#realistic-shadow)"/>
+
+    <!-- Навигация в стиле старых Mac -->
+    <g transform="translate(20,40)">
+        <text x="0" y="0" font-family="Lucida Grande, sans-serif" font-size="18" fill="#4A4A4A" style="text-shadow: 1px 1px 0px #FFFFFF;">
+            Back
+        </text>
+        <text x="320" y="0" font-family="Lucida Grande, sans-serif" font-size="18" fill="#4A4A4A" style="text-shadow: 1px 1px 0px #FFFFFF;">
+            Close
+        </text>
+    </g>
+
+    <!-- Заголовок в стиле старых журналов -->
+    <text x="200" y="80" font-family="Palatino Linotype, serif" font-size="24" fill="#2C3E50" text-anchor="middle" 
+          style="text-shadow: 1px 1px 0px #FFFFFF; font-weight: bold;">
+        Profile Preview
+    </text>
+
+    <!-- Профиль с имитацией фотоальбома -->
+    <g transform="translate(20,95)">
+        <rect width="360" height="100" fill="#F5F5F5" 
+              style="stroke:#8B4513; stroke-width:2; box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);" 
+              rx="10" filter="url(#realistic-shadow)"/>
+        
+        <!-- Фото в стиле поляроид -->
+        <g transform="translate(20,10)">
+            <rect width="80" height="80" fill="#FFFFFF" 
+                  style="stroke:#8B4513; stroke-width:2; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);" 
+                  rx="5"/>
+            <text x="40" y="45" font-family="Courier, monospace" font-size="12" fill="#4A4A4A" text-anchor="middle">
+                Photo
+            </text>
+        </g>
+
+        <!-- Информация о профиле в стиле старых записных книжек -->
+        <text x="110" y="25" font-family="Palatino Linotype, serif" font-size="18" fill="#2C3E50" style="text-shadow: 1px 1px 0px #FFFFFF;">
+            John Doe
+        </text>
+        <text x="110" y="45" font-family="Courier, monospace" font-size="14" fill="#4A4A4A">
+            25, Male • New York, USA
+        </text>
+        <text x="110" y="65" font-family="Courier, monospace" font-size="14" fill="#4A4A4A">
+            Technology • English
+        </text>
+    </g>
+
+    <!-- Биография как рукописная заметка -->
+    <g transform="translate(20,210)">
+        <rect width="360" height="50" fill="#FFFAF0" 
+              style="stroke:#8B4513; stroke-width:1; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="20" y="30" font-family="Courier, monospace" font-size="14" fill="#4A4A4A">
+            Tech enthusiast and content creator.
+        </text>
+    </g>
+
+    <!-- Кнопки пожертвований как старинные конверты -->
+    <g transform="translate(20,275)">
+        <rect width="175" height="40" fill="url(#metal-gradient)" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="87" y="25" font-family="Lucida Grande, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">
+            Donate TON
+        </text>
+
+        <rect x="185" width="175" height="40" fill="url(#metal-gradient)" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="272" y="25" font-family="Lucida Grande, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">
+            Donate USDT
+        </text>
+    </g>
+
+    <!-- Социальные ссылки как старые визитные карточки -->
+    <g transform="translate(20,330)">
+        <rect width="360" height="180" fill="#F5F5F5" 
+              style="stroke:#8B4513; stroke-width:2;" 
+              rx="10" filter="url(#realistic-shadow)"/>
+        
+        <g transform="translate(20,20)">
+            <rect width="320" height="40" fill="#FFFFFF" 
+                  style="stroke:#8B4513; stroke-width:1; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);" 
+                  rx="5"/>
+            <text x="15" y="25" font-family="Courier, monospace" font-size="14" fill="#4A4A4A">
+                YouTube Channel
+            </text>
+        </g>
+        
+        <g transform="translate(20,70)">
+            <rect width="320" height="40" fill="#FFFFFF" 
+                  style="stroke:#8B4513; stroke-width:1; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);" 
+                  rx="5"/>
+            <text x="15" y="25" font-family="Courier, monospace" font-size="14" fill="#4A4A4A">
+                Twitter Profile
+            </text>
+        </g>
+
+        <g transform="translate(20,120)">
+            <rect width="320" height="40" fill="#FFFFFF" 
+                  style="stroke:#8B4513; stroke-width:1; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);" 
+                  rx="5"/>
+            <text x="15" y="25" font-family="Courier, monospace" font-size="14" fill="#4A4A4A">
+                Instagram Profile
+            </text>
+        </g>
+    </g>
+
+    <!-- Кнопки действий как старинные металлические кнопки -->
+    <g transform="translate(20,625)">
+        <rect width="360" height="40" fill="url(#metal-gradient)" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="8" filter="url(#realistic-shadow)"/>
+        <text x="180" y="25" font-family="Lucida Grande, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">
+            EDIT PROFILE
+        </text>
+
+        <rect y="45" width="360" height="40" fill="url(#metal-gradient)" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="8" filter="url(#realistic-shadow)"/>
+        <text x="180" y="70" font-family="Lucida Grande, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF">
+            SAVE
+        </text>
+    </g>
+
+    <!-- Нижняя навигация как кожаный футляр -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#D2B48C" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="42" y="25" font-family="Lucida Grande, sans-serif" font-size="16" text-anchor="middle" fill="#4A4A4A">
+            Home
+        </text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#D2B48C" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="134" y="25" font-family="Lucida Grande, sans-serif" font-size="16" text-anchor="middle" fill="#4A4A4A">
+            Cabinet
+        </text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#D2B48C" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="226" y="25" font-family="Lucida Grande, sans-serif" font-size="16" text-anchor="middle" fill="#4A4A4A">
+            Channels
+        </text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#D2B48C" 
+              style="stroke:#8B4513; stroke-width:1;" 
+              rx="5" filter="url(#realistic-shadow)"/>
+        <text x="318" y="25" font-family="Lucida Grande, sans-serif" font-size="16" text-anchor="middle" fill="#4A4A4A">
+            More
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <!-- Material Design Background Gradient -->
+        <linearGradient id="material-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FAFAFA;stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:#F5F5F5;stop-opacity:1"/>
+        </linearGradient>
+
+        <!-- Material Design Shadow -->
+        <filter id="material-shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.14)"/>
+        </filter>
+
+        <!-- Animation for Material Design -->
+        <style type="text/css">
+            <![CDATA[
+                @keyframes material-ripple {
+                    0%, 100% { transform: scale(1); }
+                    50% { transform: scale(0.98); }
+                }
+                .material-hover:hover {
+                    animation: material-ripple 0.4s ease-in-out;
+                }
+                @keyframes material-pulse {
+                    0% { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+                    50% { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+                    100% { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+                }
+            ]]>
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#material-bg)"/>
+
+    <!-- Navigation -->
+    <g transform="translate(20,40)">
+        <text x="0" y="0" font-family="Roboto, sans-serif" font-size="18" font-weight="500" fill="#424242">Back</text>
+        <text x="340" y="0" font-family="Roboto, sans-serif" font-size="18" font-weight="500" fill="#424242" text-anchor="end">Home</text>
+    </g>
+
+    <!-- Logo with Material Typography -->
+    <g transform="translate(200,95)">
+        <text x="0" y="0" font-family="Roboto, sans-serif" font-size="42" fill="#212121" text-anchor="middle" font-weight="500"
+              textLength="360" lengthAdjust="spacingAndGlyphs">
+            infico<tspan fill="#757575" font-weight="400">.online</tspan>
+        </text>
+    </g>
+
+    <!-- Language and Theme Chips -->
+    <rect x="20" y="115" width="70" height="30" fill="#E0E0E0" rx="15" filter="url(#material-shadow)" class="material-hover"/>
+    <text x="55" y="135" font-family="Roboto, sans-serif" font-size="14" text-anchor="middle" fill="#424242">english</text>
+
+    <rect x="310" y="115" width="70" height="30" fill="#E0E0E0" rx="15" filter="url(#material-shadow)" class="material-hover"/>
+    <text x="345" y="135" font-family="Roboto, sans-serif" font-size="14" text-anchor="middle" fill="#424242">theme</text>
+
+    <!-- Material Design Action Icons -->
+    <g transform="translate(200,130)">
+        <g transform="translate(-80,0)">
+            <circle cx="0" cy="0" r="13" fill="#2196F3" filter="url(#material-shadow)" class="material-hover"/>
+            <path d="M-6,-6 L6,6 M-6,6 L6,-6" stroke="#ffffff" stroke-width="1.8"/>
+        </g>
+        
+        <g transform="translate(-40,0)">
+            <circle cx="0" cy="0" r="13" fill="#4CAF50" filter="url(#material-shadow)" class="material-hover"/>
+            <path d="M-5,0 L2,3 L5,-4 L-3,1 L-5,0z" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+        </g>
+        
+        <g transform="translate(0,0)">
+            <circle cx="0" cy="0" r="13" fill="#FF5722" filter="url(#material-shadow)" class="material-hover"/>
+            <rect x="-4" y="-3" width="8" height="6" stroke="#ffffff" stroke-width="1.8" fill="none" rx="2"/>
+            <path d="M-1,-1 L2,0 L-1,1z" fill="#ffffff"/>
+        </g>
+        
+        <g transform="translate(40,0)">
+            <circle cx="0" cy="0" r="13" fill="#9C27B0" filter="url(#material-shadow)" class="material-hover"/>
+            <rect x="-4" y="-4" width="8" height="8" stroke="#ffffff" stroke-width="1.8" fill="none" rx="2"/>
+            <circle cx="0" cy="0" r="2" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+            <circle cx="3" cy="-3" r="0.8" fill="#ffffff"/>
+        </g>
+        
+        <g transform="translate(80,0)">
+            <circle cx="0" cy="0" r="13" fill="#FFC107" filter="url(#material-shadow)" class="material-hover"/>
+            <path d="M1,-6 L1,2 M-3,2 C-3,5 1,5 1,2 M1,-2 C4,-2 6,-4 6,-6" stroke="#ffffff" stroke-width="1.8" fill="none"/>
+        </g>
+    </g>
+
+    <!-- Ad Space Card -->
+    <rect x="20" y="165" width="360" height="80" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+    <text x="190" y="215" font-family="Roboto, sans-serif" font-size="20" text-anchor="middle" fill="#212121">Your Ad Space Here</text>
+
+    <!-- Search Bar -->
+    <rect x="20" y="255" width="360" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+    <text x="40" y="280" font-family="Roboto, sans-serif" font-size="18" fill="#757575">🔍 Search</text>
+
+    <!-- Trending Section -->
+    <rect x="20" y="305" width="360" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+    <text x="40" y="330" font-family="Roboto, sans-serif" font-size="18" fill="#212121">TRENDING PAGES ▼</text>
+
+    <!-- Filters -->
+    <g transform="translate(20,355)">
+        <rect width="175" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="87" y="25" font-family="Roboto, sans-serif" font-size="16" text-anchor="middle" fill="#212121">Topic ▼</text>
+        
+        <rect x="185" width="175" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="272" y="25" font-family="Roboto, sans-serif" font-size="16" text-anchor="middle" fill="#212121">Language ▼</text>
+    </g>
+
+    <!-- Channel Cards -->
+    <g transform="translate(20,405)">
+        <rect width="360" height="80" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="20" y="25" font-family="Roboto, sans-serif" font-size="18" fill="#212121">@crypto_advice</text>
+        <text x="330" y="25" font-family="Roboto, sans-serif" font-size="14" text-anchor="end" fill="#757575">Active ICO</text>
+        <text x="20" y="45" font-family="Roboto, sans-serif" font-size="15" fill="#757575">Crypto/English</text>
+        <text x="20" y="65" font-family="Roboto, sans-serif" font-size="15" fill="#757575">2.5M Views</text>
+        <text x="330" y="65" font-family="Roboto, sans-serif" font-size="15" text-anchor="end" fill="#212121">Growth weekly: <tspan fill="#4CAF50">▲</tspan> +25%</text>
+    </g>
+
+    <g transform="translate(20,495)">
+        <rect width="360" height="80" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="20" y="25" font-family="Roboto, sans-serif" font-size="18" fill="#212121">@tech_insights</text>
+        <text x="330" y="25" font-family="Roboto, sans-serif" font-size="14" text-anchor="end" fill="#757575">Active ICO</text>
+        <text x="20" y="45" font-family="Roboto, sans-serif" font-size="15" fill="#757575">Tech/English</text>
+        <text x="20" y="65" font-family="Roboto, sans-serif" font-size="15" fill="#757575">1.8M Views</text>
+        <text x="330" y="65" font-family="Roboto, sans-serif" font-size="15" text-anchor="end" fill="#212121">Growth weekly: <tspan fill="#4CAF50">▲</tspan> +18%</text>
+    </g>
+
+    <g transform="translate(20,585)">
+        <rect width="360" height="80" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="20" y="25" font-family="Roboto, sans-serif" font-size="18" fill="#212121">@finance_daily</text>
+        <text x="330" y="25" font-family="Roboto, sans-serif" font-size="14" text-anchor="end" fill="#757575">Active ICO</text>
+        <text x="20" y="45" font-family="Roboto, sans-serif" font-size="15" fill="#757575">Finance/English</text>
+        <text x="20" y="65" font-family="Roboto, sans-serif" font-size="15" fill="#757575">3.1M Views</text>
+        <text x="330" y="65" font-family="Roboto, sans-serif" font-size="15" text-anchor="end" fill="#212121">Growth weekly: <tspan fill="#4CAF50">▲</tspan> +32%</text>
+    </g>
+
+    <!-- Create Page Button -->
+    <rect x="20" y="675" width="360" height="50" fill="#2196F3" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+    <text x="190" y="705" font-family="Roboto, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Create Page</text>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,735)">
+        <rect x="0" y="0" width="85" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="42" y="25" font-family="Roboto, sans-serif" font-size="16" text-anchor="middle" fill="#2196F3">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="134" y="25" font-family="Roboto, sans-serif" font-size="16" text-anchor="middle" fill="#757575">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="226" y="25" font-family="Roboto, sans-serif" font-size="16" text-anchor="middle" fill="#757575">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1" rx="4" filter="url(#material-shadow)" class="material-hover"/>
+        <text x="318" y="25" font-family="Roboto, sans-serif" font-size="16" text-anchor="middle" fill="#757575">More</text>
+    </g>
+</svg>

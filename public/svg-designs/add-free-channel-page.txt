@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back</text>
+    <text x="320" y="35" font-family="Courier" font-size="16" fill="#333333">Home</text>
+
+    <!-- Header -->
+    <g transform="translate(200,55)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="600">Add Telegram Channel</text>
+        <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">Grow your audience with INFICO</text>
+    </g>
+
+    <!-- Benefits Banner -->
+    <g transform="translate(20,95)">
+        <rect width="360" height="120" fill="#333333" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#ffffff">Free Benefits:</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#ffffff">• Auto-repost to matching INFICO channel</text>
+            <text x="0" y="45" font-family="Courier" font-size="14" fill="#ffffff">• Get new subs from INFICO community</text>
+            <text x="0" y="65" font-family="Courier" font-size="14" fill="#ffffff">• Content shared with attribution</text>
+            <text x="0" y="85" font-family="Courier" font-size="14" fill="#ffffff">• Cross-promotion in your category</text>
+        </g>
+    </g>
+
+    <!-- Channel Type Selection -->
+    <g transform="translate(20,230)">
+        <!-- FREE Button (Active) -->
+        <rect width="175" height="40" fill="#333333" rx="8"/>
+        <text x="87.5" y="25" font-family="Courier" font-size="14" fill="#ffffff" text-anchor="middle">FREE</text>
+        
+        <!-- PAID Button (Inactive) -->
+        <rect x="185" width="175" height="40" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="272.5" y="25" font-family="Courier" font-size="14" fill="#333333" text-anchor="middle">PAID</text>
+    </g>
+
+    <!-- Channel Info Form -->
+    <g transform="translate(20,285)">
+        <!-- Channel Username and Button Name -->
+        <g transform="translate(0,0)">
+            <rect y="0" width="175" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#999999">@channelname</text>
+        </g>
+            
+        <g transform="translate(185,0)">
+            <rect y="0" width="175" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#999999">enter button name</text>
+        </g>
+
+        <!-- Category and Language -->
+        <g transform="translate(0,50)">
+            <rect y="0" width="175" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#999999">Select category ▼</text>
+
+            <rect x="185" y="0" width="175" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="205" y="25" font-family="Courier" font-size="14" fill="#999999">Select language ▼</text>
+        </g>
+
+        <!-- Description -->
+        <g transform="translate(0,100)">
+            <rect y="0" width="360" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+            <text x="20" y="25" font-family="Courier" font-size="14" fill="#999999">Tell about your channel...</text>
+        </g>
+    </g>
+
+    <!-- Required Steps Box -->
+    <g transform="translate(20,440)">
+        <rect width="360" height="140" fill="#fff8e1" stroke="#ffd54f" stroke-width="1" rx="8"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#333333">Required Steps:</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">1. Add @inficoBot as admin</text>
+            <text x="0" y="45" font-family="Courier" font-size="14" fill="#666666">2. Bot will repost to matching</text>
+            <text x="0" y="65" font-family="Courier" font-size="14" fill="#666666">   INFICO channel by topic/lang</text>
+            <text x="0" y="85" font-family="Courier" font-size="14" fill="#666666">3. Get 1 INFICO token per each</text>
+            <text x="0" y="105" font-family="Courier" font-size="14" fill="#666666">   subscriber for future ICO</text>
+        </g>
+    </g>
+
+    <!-- Bot Username Section -->
+    <g transform="translate(20,592)">
+        <rect width="360" height="45" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <text x="20" y="28" font-family="Courier" font-size="14" fill="#666666">Bot Username:</text>
+        <text x="130" y="28" font-family="Courier" font-size="14" fill="#333333">@inficoBot</text>
+        <rect x="260" y="8" width="80" height="30" fill="#333333" rx="6"/>
+        <text x="300" y="28" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">COPY</text>
+    </g>
+
+    <!-- Submit Button -->
+    <g transform="translate(20,649)">
+        <rect width="360" height="40" fill="#333333" rx="8"/>
+        <text x="180" y="26" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">SUBMIT FOR REVIEW</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">More</text>
+    </g>
+</svg>

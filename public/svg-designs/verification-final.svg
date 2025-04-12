@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Top Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back to Profile</text>
+    
+    <!-- Header -->
+    <g transform="translate(20,65)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a">Channel Verification</text>
+    </g>
+
+    <!-- User Info -->
+    <g transform="translate(20,95)">
+        <rect width="360" height="100" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">@johndoe</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">ID: #123456</text>
+            <text x="0" y="50" font-family="Courier" font-size="14" fill="#666666">Request date: Oct 15, 2024</text>
+        </g>
+    </g>
+
+    <!-- Channel Info -->
+    <g transform="translate(20,205)">
+        <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Telegram Channel</text>
+            <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666">Link: @crypto_news</text>
+            
+            <!-- Check Link Button -->
+            <rect x="240" y="10" width="100" height="30" fill="#333333" rx="6"/>
+            <text x="290" y="30" font-family="Courier" font-size="12" fill="#ffffff" text-anchor="middle">CHECK LINK</text>
+        </g>
+    </g>
+
+    <!-- Subscribers Input -->
+    <g transform="translate(20,305)">
+        <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#333333">Subscribers Count</text>
+            <!-- Input Field -->
+            <rect y="15" width="320" height="40" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+            <text x="15" y="40" font-family="Courier" font-size="14" fill="#999999">Enter number of subscribers...</text>
+        </g>
+    </g>
+
+    <!-- Tokens Input -->
+    <g transform="translate(20,405)">
+        <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#333333">ICO Tokens Limit</text>
+            <!-- Input Field -->
+            <rect y="15" width="320" height="40" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+            <text x="15" y="40" font-family="Courier" font-size="14" fill="#999999">Enter tokens amount...</text>
+        </g>
+    </g>
+
+    <!-- Admin Note -->
+    <g transform="translate(20,505)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#333333">Admin Note</text>
+            <!-- Note Field -->
+            <rect y="15" width="320" height="70" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="6"/>
+            <text x="15" y="45" font-family="Courier" font-size="14" fill="#999999">Add a note...</text>
+        </g>
+    </g>
+
+    <!-- Action Button -->
+    <g transform="translate(20,645)">
+        <!-- Verify Button -->
+        <rect width="360" height="48" fill="#4caf50" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">VERIFY AND ADD ICO LIMIT TOKENS</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

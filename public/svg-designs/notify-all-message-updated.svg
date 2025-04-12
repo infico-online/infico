@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Top Navigation -->
+    <text x="40" y="35" font-family="Courier" font-size="16" fill="#333333">Back</text>
+
+    <!-- Message Preview -->
+    <g transform="translate(20,65)">
+        <rect width="360" height="280" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Important Update: ICO Parameters Changed</text>
+            
+            <text x="0" y="35" font-family="Courier" font-size="14" fill="#333333">• Total Supply: 100,000 INFICO</text>
+            <text x="0" y="60" font-family="Courier" font-size="14" fill="#333333">• Duration: 3 months</text>
+            <text x="0" y="85" font-family="Courier" font-size="14" fill="#333333">• APY: 15%</text>
+            <text x="0" y="110" font-family="Courier" font-size="14" fill="#333333">• Schedule: Monthly</text>
+            <text x="0" y="135" font-family="Courier" font-size="14" fill="#333333">• New Limits: 100 - 10,000 INFICO</text>
+            
+            <text x="0" y="170" font-family="Courier" font-size="14" fill="#333333">Creator: @johndoe</text>
+            <text x="0" y="195" font-family="Courier" font-size="14" fill="#333333">Website: infico.online/ico/cryptonews</text>
+            <text x="0" y="220" font-family="Courier" font-size="14" fill="#333333">Channel: @cryptonews</text>
+            
+            <text x="0" y="255" font-family="Courier" font-size="14" fill="#666666">Current investment terms remain unchanged.</text>
+        </g>
+    </g>
+
+    <!-- Delivery Options -->
+    <g transform="translate(20,365)">
+        <text x="0" y="0" font-family="Courier" font-size="14" fill="#666666">Delivery Options</text>
+
+        <!-- Post in Channel -->
+        <g transform="translate(0,15)">
+            <rect width="360" height="90" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+            <!-- Checkbox -->
+            <rect x="20" y="20" width="24" height="24" fill="#ffffff" stroke="#333333" stroke-width="2" rx="4"/>
+            <path d="M25,32 l5,5 l10,-10" stroke="#333333" stroke-width="2" fill="none"/>
+            <!-- Input -->
+            <text x="60" y="35" font-family="Courier" font-size="14" fill="#333333">Post in Telegram Channel</text>
+            <rect x="20" y="45" width="320" height="30" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+            <text x="35" y="65" font-family="Courier" font-size="14" fill="#999999">@channel_name</text>
+        </g>
+
+        <!-- Direct Messages -->
+        <g transform="translate(0,115)">
+            <rect width="360" height="50" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8"/>
+            <!-- Checkbox -->
+            <rect x="20" y="13" width="24" height="24" fill="#ffffff" stroke="#333333" stroke-width="2" rx="4"/>
+            <path d="M25,25 l5,5 l10,-10" stroke="#333333" stroke-width="2" fill="none"/>
+            <text x="60" y="30" font-family="Courier" font-size="14" fill="#333333">Send to Investors (152)</text>
+        </g>
+    </g>
+
+    <!-- Statistics -->
+    <g transform="translate(20,545)">
+        <rect width="360" height="100" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Channel Statistics</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">Active Investors:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">152</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Total Investment:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">45,000 INFICO</text>
+        </g>
+    </g>
+
+    <!-- Send Button -->
+    <g transform="translate(20,665)">
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">SEND</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">Admin</text>
+    </g>
+</svg>

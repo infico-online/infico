@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+    
+    <!-- Success Icon -->
+    <g transform="translate(200,130)">
+        <circle cx="0" cy="0" r="40" fill="#4caf50" filter="url(#shadow)"/>
+        <path d="M-15,0 l10,10 l20,-20" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Header -->
+    <g transform="translate(200,200)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="600">Platform is Online</text>
+        <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">Maintenance mode has been disabled</text>
+    </g>
+
+    <!-- Status Summary -->
+    <g transform="translate(20,260)">
+        <rect width="360" height="160" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Maintenance Summary</text>
+            
+            <text x="0" y="35" font-family="Courier" font-size="14" fill="#666666">Duration:</text>
+            <text x="320" y="35" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">2 hours</text>
+            
+            <text x="0" y="65" font-family="Courier" font-size="14" fill="#666666">Started:</text>
+            <text x="320" y="65" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Oct 15, 14:30</text>
+            
+            <text x="0" y="95" font-family="Courier" font-size="14" fill="#666666">Ended:</text>
+            <text x="320" y="95" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Oct 15, 16:30</text>
+
+            <text x="0" y="125" font-family="Courier" font-size="14" fill="#666666">Platform Status:</text>
+            <text x="320" y="125" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">Operational</text>
+        </g>
+    </g>
+
+    <!-- Platform Stats -->
+    <g transform="translate(20,430)">
+        <rect width="360" height="160" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Current Platform Stats</text>
+            
+            <text x="0" y="35" font-family="Courier" font-size="14" fill="#666666">Active Users:</text>
+            <text x="320" y="35" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">2,500</text>
+            
+            <text x="0" y="65" font-family="Courier" font-size="14" fill="#666666">Active ICOs:</text>
+            <text x="320" y="65" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">25</text>
+            
+            <text x="0" y="95" font-family="Courier" font-size="14" fill="#666666">Token Operations:</text>
+            <text x="320" y="95" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">Active</text>
+
+            <text x="0" y="125" font-family="Courier" font-size="14" fill="#666666">System Load:</text>
+            <text x="320" y="125" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">Normal</text>
+        </g>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(20,600)">
+        <!-- View Logs Button -->
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" text-anchor="middle" fill="#ffffff">DOWNLOAD LOGS</text>
+
+        <!-- Return Button -->
+        <rect y="56" width="360" height="48" fill="#ffffff" stroke="#333333" stroke-width="1" rx="8"/>
+        <text x="180" y="86" font-family="Courier" font-size="14" text-anchor="middle" fill="#333333">RETURN TO ADMIN</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:1" />
+        </linearGradient>
+        
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="400" height="800" fill="url(#bg-gradient)" rx="40"/>
+
+    <!-- Success Icon -->
+    <g transform="translate(200,100)">
+        <circle cx="0" cy="0" r="40" fill="#333333" filter="url(#shadow)"/>
+        <path d="M-15,0 l10,10 l20,-20" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Header -->
+    <g transform="translate(200,170)">
+        <text x="0" y="0" font-family="Courier" font-size="24" fill="#1a1a1a" text-anchor="middle">Price Updated!</text>
+        <text x="0" y="25" font-family="Courier" font-size="14" fill="#666666" text-anchor="middle">Token price has been updated successfully</text>
+    </g>
+
+    <!-- Price Details -->
+    <g transform="translate(20,220)">
+        <rect width="360" height="180" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Price Details</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#666666">New Price:</text>
+            <text x="320" y="30" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">1.1 USDT</text>
+            
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#666666">Old Price:</text>
+            <text x="320" y="55" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">1.0 USDT</text>
+            
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#666666">Change:</text>
+            <text x="320" y="80" font-family="Courier" font-size="14" fill="#4caf50" text-anchor="end">+10%</text>
+
+            <text x="0" y="105" font-family="Courier" font-size="14" fill="#666666">Updated At:</text>
+            <text x="320" y="105" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">Oct 15, 13:45</text>
+
+            <text x="0" y="130" font-family="Courier" font-size="14" fill="#666666">Orders Affected:</text>
+            <text x="320" y="130" font-family="Courier" font-size="14" fill="#333333" text-anchor="end">156</text>
+        </g>
+    </g>
+
+    <!-- Status Updates -->
+    <g transform="translate(20,410)">
+        <rect width="360" height="120" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" rx="8" filter="url(#shadow)"/>
+        <g transform="translate(20,20)">
+            <text x="0" y="0" font-family="Courier" font-size="16" fill="#333333">Status Updates</text>
+            
+            <text x="0" y="30" font-family="Courier" font-size="14" fill="#4caf50">✓ Orders recalculated</text>
+            <text x="0" y="55" font-family="Courier" font-size="14" fill="#4caf50">✓ Users notified</text>
+            <text x="0" y="80" font-family="Courier" font-size="14" fill="#4caf50">✓ System updated</text>
+        </g>
+    </g>
+
+    <!-- Action Button -->
+    <g transform="translate(20,540)">
+        <rect width="360" height="48" fill="#333333" rx="8"/>
+        <text x="180" y="30" font-family="Courier" font-size="14" fill="#ffffff" text-anchor="middle">BACK TO ACTIONS</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <g transform="translate(20,740)">
+        <rect x="0" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="42" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Home</text>
+        
+        <rect x="92" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="134" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Cabinet</text>
+        
+        <rect x="184" y="0" width="85" height="40" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="226" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#333333">Channels</text>
+        
+        <rect x="276" y="0" width="85" height="40" fill="#333333" stroke="#333333" stroke-width="1" filter="url(#shadow)" rx="8"/>
+        <text x="318" y="25" font-family="Courier" font-size="16" text-anchor="middle" fill="#ffffff">More</text>
+    </g>
+</svg>
